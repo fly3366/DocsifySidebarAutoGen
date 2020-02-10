@@ -1,0 +1,27 @@
+{
+  "name": "docsifysidebarautogen",
+  "version": "0.1.0",
+  "description": "Docsify siderbar gen",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fly3366/DocsifySidebarAutoGen.git"
+  },
+  "keywords": [
+    "docsify",
+    "sidebar"
+  ],
+  "author": "fly3366",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fly3366/DocsifySidebarAutoGen/issues"
+  },
+  "homepage": "https://github.com/fly3366/DocsifySidebarAutoGen#readme",
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  }
+}
