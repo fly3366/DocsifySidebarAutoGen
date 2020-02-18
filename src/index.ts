@@ -23,9 +23,12 @@ export class DocsifyAutoGen {
         let localDir = await promises.opendir(path);
         for await (let seek of localDir) {
             if (this.isDic(seek)) {
+                if (seek.name == 'assets') {
+                    continue;
+                }
                 if (this.defaultProps.hasSelf) {
                     let label = seek.name;
-                    this.sidebarWrite(label, label, `${localDir.path}/${seek.name}`.slice(process.argv[2].length), stage)
+                    this.sidebarWrite(label, label, `${localDir.path}/${seek.name}`.slice(process.argv[2].length) + `/`, stage)
                         .then(res => {
                             this.fileSet(res);
                         })
